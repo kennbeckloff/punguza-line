@@ -16,3 +16,8 @@ li:hover{
     color: white;
     margin: 30px;
 }
+
+section>.cont2{
+    display: flex;
+    margin: 20px;
+}
