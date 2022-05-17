@@ -1,9 +1,18 @@
 body{
-    background-image: url("/assets/Group\ of\ african\ doctors\ students\ near\ medical\ university\ outdoor_.jpeg");
+    background-image: url("/assets/sasun-bughdaryan-RlIppR1I3E8-unsplash.jpg");
     background-size: cover;
     height: 100vh;
 }
+
 body>section>nav>div>ul>li{
     display: inline-block;
     padding: 10px;
+}
+li:hover{
+    background-color:chartreuse
+}
+#hdd{
+    font-size:xx-large;
+    color: white;
+    margin: 30px;
 }
