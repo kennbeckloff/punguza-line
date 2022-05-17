@@ -28,3 +28,36 @@ section>.cont3{
     align-items: center;
     margin-left: 180px;
 }
+
+section>.cont4{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+section>div>#con4a{
+    margin-right: 20px;
+}
+
+section>div>#con4b{
+    margin-right: 20px;
+}
+
+section>div>#con4c{
+    margin-right: 20px;
+}
+
+section>div>#con4d{
+    margin-right: 20px;
+}
+
+section>div>#con4e{
+    margin-right: 40px;
+}
+
+section>div>#con4f{
+    margin-right: 40px;
+}
+
+section>div>#con4g{
+    margin-right: 40px;
+}
