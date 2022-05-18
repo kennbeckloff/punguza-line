@@ -1,32 +1,51 @@
 .sect1{
-    background-image: url("/assets/sasun-bughdaryan-RlIppR1I3E8-unsplash.jpg");
+    background-image: url("/assets/_\ \(1\).jpeg");
     background-size: cover;
     height: 100vh;
 }
 
-body>section>nav>div>ul>li{
+body>section>nav>div>button{
     display: inline-block;
-    padding: 10px;
+    font-size:small;
+    margin-right: 35px;
+}
+
+button:hover{
+    background-color: mediumblue;
+    color: red;
+    border: 1px solid blue;
+}
+section>#hdd{
+    color: white;
+}
+section>#paraA{
+    color: white;
 }
 li:hover{
     background-color:chartreuse
 }
-#hdd{
-    font-size:xx-large;
-    color: white;
-    margin: 30px;
+
+section>.hedi{
+    text-decoration: underline;
+    text-align: center;
+    color: crimson;
 }
 
-section>.cont2{
+section>div> ul{
     display: flex;
-    margin: px;
-    align-items: center;
 }
 
-section>.cont3{
-    display: flex;
-    align-items: center;
-    margin-left: 180px;
+section>div>ul>li{
+    margin: 50px;
+    font-size: large;
+    color: blue;
+
+}
+
+section>#hdd2{
+    text-decoration: overline;
+    text-align: center;
+    color:crimson;
 }
 
 section>.cont4{
@@ -59,5 +78,21 @@ section>div>#con4f{
 }
 
 section>div>#con4g{
-    margin-right: 40px;
+    margin-right: 50px;
 }
+section>.contain2{
+    margin-top: 20px;
+    border-top: 1px solid black;
+}
+
+.sect4{
+    border:1px solid black;
+    background-color: blue;
+    
+}
+section>div>ol>li{
+    list-style: none;
+    font-size: large;
+}
+
+
