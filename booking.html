@@ -4,10 +4,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./style.css">
-     <!--Title-->
-    <title>Appoitment Form</title>
-     <!-- CSS File-->
-</head>
+      <title>Appointment Form</title>
+   </head>
 <body style="background-color: rgb(57, 184, 235)">
     <script src="./script.js"></script>
 <CENTER><h2>Appointment Form</h2></CENTER>
@@ -15,8 +13,7 @@
     <table>
         <!--Row-1-->
         <tr>
-            <!--Column-1-->
-            <td>
+              <td>
                 <!--Form-->
                 <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
                  <h3>Booking Form</h3>
@@ -36,7 +33,15 @@
                         <!--Input Phone Number-->
                         <input type="text" name="phoneNo" id="phoneNo" placeholder="Enter the Phone number" required>
                     </div>
-                    <!--div-3-->
+                  <!-- div 3 -->
+                  <div>
+                    <label>Email</label>
+                    <!--Validation Error-->
+                    <label class="validation-error hide" id="emailvalidationError" >This field is required</label>
+                    <!--Input Email-->
+                    <input type="text" name="email" id="email" placeholder="Enter the Email" required>
+                </div>
+                    <!--div-4-->
                     <div>
                         <label>Enter Department</label>
                         <!--Validation Error-->
@@ -44,14 +49,24 @@
                        <!--Input Department-->
                         <input type="text" name="selecDepart" id="selecDepart" placeholder="Enter the Department i.e VCT, ENT, CANCER">
                     </div>
-                    <!--div-4-->
+                    <!--div-5-->
                     <div>
                         <label>Enter Time</label>
                         <!--Validation Error-->
                         <label class="validation-error hide" id="timevalidationError">This field is required</label>
                         <!--Input Time-->
                         <input type="time" name="time" id="time" placeholder="Enter Time  hrs/mins">
+                    </div> <br>
+
+                    <!-- div 6 -->
+                    <div>
+                        <label>Enter Date</label>
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="datevalidationError">This field is required</label>
+                        <!--Input Date-->
+                        <input type="date" name="date" id="date" placeholder="Enter date  dd/mm/yyyy">
                     </div>
+<<<<<<< HEAD
                    <!-- div 5 -->
                     <div>
                         <label>Enter Date</label>
@@ -61,6 +76,9 @@
                         <input type="date" name="date" id="date" placeholder="Enter date  dd/mm/yyyy">
                     </div>
                     <!--div-6-->
+=======
+                    <!--div-7-->
+>>>>>>> cb32ed55036efd96ac0b7bec192fd4c485881a73
                     <div>
                         <label>Age</label>
                         <!--Validation Error-->
@@ -68,14 +86,45 @@
                         <!--Input Age-->
                         <input type="number" name="age" id="age" placeholder="Enter the Age">
                     </div>
+<<<<<<< HEAD
                     <!--div-submit-->
+=======
+                    <!--div-7-->
+>>>>>>> cb32ed55036efd96ac0b7bec192fd4c485881a73
                     <div class="form-action-buttons">
                         <!--Input Button-->
-                        <input type="submit" value="Submit">
+                        <input type="submit" value="Submit" onclick="myFunction()">
                     </div>
                 </form>
             </td>
+<<<<<<< HEAD
          </tr>
+=======
+            <td>
+                <!--Nested Table-->
+                <table class="list" id="stdlist" style="background-color: #C2976D;">
+                    <!--Table Head-->
+                    <H3>Kindly Check Current Appointment Schedule Before Booking Your's</H3>
+                    <thead>
+                        <!--Row-2-->
+                        <tr>
+                            <th>Full Name</th>
+                            <th> Phone no</th>
+                            <th>Email</th>
+                            <th>Department</th>
+                            <th>Time</th>
+                            <th>Date</th>
+                            <th>Age</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <!--Table Body-->
+                    <tbody>
+                    </tbody>
+                </table>
+            </td>
+             </tr>
+>>>>>>> cb32ed55036efd96ac0b7bec192fd4c485881a73
     </table>
 <script src="script.js"></script>
 </body>
