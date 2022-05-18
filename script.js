@@ -94,7 +94,7 @@ function updateRecord(formData) {
 }
 // Delete Function
 function onDelete(td) {
-    if (confirm('Are you sure to delete this record ?')) {
+    if (confirm('Are you sure to delete this Appointment ?')) {
         row = td.parentElement.parentElement;
         document.getElementById("stdlist").deleteRow(row.rowIndex);
         resetForm();
