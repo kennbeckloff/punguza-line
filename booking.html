@@ -4,10 +4,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./style.css">
-     <!--Title-->
-    <title>Simple Student Record</title>
-     <!-- CSS File-->
-</head>
+      <title>Appointment Form</title>
+   </head>
 <body style="background-color: rgb(57, 184, 235)">
     <script src="./script.js"></script>
 <CENTER><h2>Appointment Form</h2></CENTER>
@@ -15,8 +13,7 @@
     <table>
         <!--Row-1-->
         <tr>
-            <!--Column-1-->
-            <td>
+              <td>
                 <!--Form-->
                 <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
                  <h3>Booking Form</h3>
@@ -41,7 +38,7 @@
                         <label>Enter Department</label>
                         <!--Validation Error-->
                         <label class="validation-error hide" id="selecDepartvalidationError">This field is required</label>
-                       <!--Input Student Class-->
+                       <!--Input Department-->
                         <input type="text" name="selecDepart" id="selecDepart" placeholder="Enter the Department i.e VCT, ENT, CANCER">
                     </div>
                     <!--div-4-->
@@ -49,10 +46,19 @@
                         <label>Enter Time</label>
                         <!--Validation Error-->
                         <label class="validation-error hide" id="timevalidationError">This field is required</label>
-                        <!--Input Total Subject-->
+                        <!--Input Time-->
                         <input type="time" name="time" id="time" placeholder="Enter Time  hrs/mins">
                     </div>
-                    <!--div-5-->
+
+                    <!-- div 5 -->
+                    <div>
+                        <label>Enter Date</label>
+                        <!--Validation Error-->
+                        <label class="validation-error hide" id="datevalidationError">This field is required</label>
+                        <!--Input Date-->
+                        <input type="date" name="date" id="date" placeholder="Enter date  dd/mm/yyyy">
+                    </div>
+                    <!--div-6-->
                     <div>
                         <label>Age</label>
                         <!--Validation Error-->
@@ -60,15 +66,14 @@
                         <!--Input Age-->
                         <input type="number" name="age" id="age" placeholder="Enter the Age">
                     </div>
-                    <!--div-6-->
+                    <!--div-7-->
                     <div class="form-action-buttons">
                         <!--Input Button-->
                         <input type="submit" value="Submit">
                     </div>
                 </form>
             </td>
-            <!--Column-2-->
-            </tr>
+             </tr>
     </table>
 <script src="script.js"></script>
 </body>
