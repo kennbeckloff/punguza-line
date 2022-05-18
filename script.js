@@ -1,4 +1,4 @@
-       var selectedRow = null
+var selectedRow = null
  
 // Form Submit Function
 function onFormSubmit() {
@@ -29,6 +29,7 @@ function readFormData() {
     formData["phoneNo"] = document.getElementById("phoneNo").value;
     formData["selecDepart"] = document.getElementById("selecDepart").value;
     formData["time"] = document.getElementById("time").value;
+     formData["date"] = document.getElementById("date").value;
     formData["age"] = document.getElementById("age").value;
     // return Form Data
     return formData;
@@ -46,9 +47,11 @@ function insertNewRecord(data) {
     cell4 = newRow.insertCell(3);
     cell4.innerHTML = data.time;
     cell5 = newRow.insertCell(4);
-    cell5.innerHTML = data.age;
-    cell5 = newRow.insertCell(5);
-    cell5.innerHTML = `<a onClick="onEdit(this)">Edit</a>
+    cell5.innerHTML = data.date;
+    cell6 = newRow.insertCell(5);
+    cell6.innerHTML = data.age;
+    cell6 = newRow.insertCell(6);
+    cell6.innerHTML = `<a onClick="onEdit(this)">Edit</a>
     <a onClick="onDelete(this)">Delete</a>`;
 }
 // Reset Function
@@ -57,6 +60,7 @@ function resetForm() {
     document.getElementById("phoneNo").value = "";
     document.getElementById("selecDepart").value = "";
     document.getElementById("time").value = "";
+    document.getElementById("date").value = "";
     document.getElementById("age").value = "";
     selectedRow = null;
 }
