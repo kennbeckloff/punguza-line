@@ -47,6 +47,7 @@ section>#hdd2{
 section>.cont4{
     display:flex;
     flex-wrap: wrap;
+    margin-left: 60px;
 }
 
 section>div>#con4a{
@@ -91,5 +92,45 @@ section>div>ol>li{
     list-style: none;
     font-size: large;
 }
+
+
+.Fra{
+    display: flex;
+    width: 100%;
+    height: 250px;
+    border: 1px solid black;
+    background-color: rgb(120, 120, 173)
+}
+.Have{
+    width: 33.3%;
+}
+.Have h4,p,img{
+    padding-top: 10px;
+}
+.Have img{
+    height: 40px;
+}
+#Pung{
+    display: flex;
+}
+#Pung p{
+    padding-top: 15px;
+}
+.Need{
+    width: 33.3%;
+}
+.Need a{
+    padding-top: 20px;
+}
+.We{
+    width: 33.3%;
+}
+
+
+
+
+
+
+
 
 
