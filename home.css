@@ -15,28 +15,24 @@ button:hover{
     color: red;
     border: 1px solid blue;
 }
-section>#hdd{
+section>.one{
     color: white;
-}
-section>#paraA{
-    color: white;
-}
-li:hover{
-    background-color:chartreuse
 }
 
-section>.hedi{
+section>div>.hedi{
     text-decoration: underline;
     text-align: center;
     color: crimson;
+    font-size:x-large;
 }
 
-section>div> ul{
+section>div>div> ul{
     display: flex;
+    
 }
 
-section>div>ul>li{
-    margin: 50px;
+section>div>div>ul>li{
+    margin: 30px;
     font-size: large;
     color: blue;
 
@@ -83,6 +79,7 @@ section>div>#con4g{
 section>.contain2{
     margin-top: 20px;
     border-top: 1px solid black;
+    text-align: center;
 }
 
 .sect4{
