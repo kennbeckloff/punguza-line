@@ -1,3 +1,6 @@
+function myFunction() {
+    alert("Appointment Booked Successfully.  Click Okay To Confirm!");
+  }
 var selectedRow = null
  
 // Form Submit Function
