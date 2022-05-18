@@ -30,6 +30,7 @@ function readFormData() {
     // Get Values From  Input
     formData["userName"] = document.getElementById("userName").value;
     formData["phoneNo"] = document.getElementById("phoneNo").value;
+    formData["email"] = document.getElementById("email").value;
     formData["selecDepart"] = document.getElementById("selecDepart").value;
     formData["time"] = document.getElementById("time").value;
      formData["date"] = document.getElementById("date").value;
@@ -46,14 +47,16 @@ function insertNewRecord(data) {
     cell2 = newRow.insertCell(1);
     cell2.innerHTML = data.phoneNo;
     cell3 = newRow.insertCell(2);
-    cell3.innerHTML = data.selecDepart;
+    cell3.innerHTML = data.email;
     cell4 = newRow.insertCell(3);
-    cell4.innerHTML = data.time;
+    cell4.innerHTML = data.selecDepart;
     cell5 = newRow.insertCell(4);
-    cell5.innerHTML = data.date;
+    cell5.innerHTML = data.time;
     cell6 = newRow.insertCell(5);
-    cell6.innerHTML = data.age;
-    cell6 = newRow.insertCell(6);
+    cell6.innerHTML = data.date;
+    cell7 = newRow.insertCell(6);
+    cell7.innerHTML = data.age;
+    cell6 = newRow.insertCell(7);
     cell6.innerHTML = `<a onClick="onEdit(this)">Edit</a>
     <a onClick="onDelete(this)">Delete</a>`;
 }
@@ -61,6 +64,7 @@ function insertNewRecord(data) {
 function resetForm() {
     document.getElementById("userName").value = "";
     document.getElementById("phoneNo").value = "";
+    document.getElementById("email").value = "";
     document.getElementById("selecDepart").value = "";
     document.getElementById("time").value = "";
     document.getElementById("date").value = "";
@@ -72,17 +76,21 @@ function onEdit(td) {
     selectedRow = td.parentElement.parentElement;
     document.getElementById("userName").value = selectedRow.cells[0].innerHTML;
     document.getElementById("phoneNo").value = selectedRow.cells[1].innerHTML;
-    document.getElementById("selecDepart").value = selectedRow.cells[2].innerHTML;
-    document.getElementById("time").value = selectedRow.cells[3].innerHTML;
-    document.getElementById("age").value = selectedRow.cells[4].innerHTML;
+    document.getElementById("email").value = selectedRow.cells[2].innerHTML;
+    document.getElementById("selecDepart").value = selectedRow.cells[3].innerHTML;
+    document.getElementById("time").value = selectedRow.cells[4].innerHTML;
+    document.getElementById("date").value = selectedRow.cells[5].innerHTML;
+    document.getElementById("age").value = selectedRow.cells[6].innerHTML;
 }
 // Update Record
 function updateRecord(formData) {
     selectedRow.cells[0].innerHTML = formData.userName;
     selectedRow.cells[1].innerHTML = formData.phoneNo;
-    selectedRow.cells[2].innerHTML = formData.selecDepart;
-    selectedRow.cells[3].innerHTML = formData.time;
-    selectedRow.cells[4].innerHTML = formData.age;
+    selectedRow.cells[2].innerHTML = formData.email;
+    selectedRow.cells[3].innerHTML = formData.selecDepart;
+    selectedRow.cells[4].innerHTML = formData.time;
+    selectedRow.cells[5].innerHTML = formData.date;
+    selectedRow.cells[6].innerHTML = formData.age;
 }
 // Delete Function
 function onDelete(td) {
@@ -106,7 +114,7 @@ function validate() {
             document.getElementById("userNamevalidationError").classList.add("hide");
         }
     }
-    // Roll No validation
+    // Phone No validation
     if (document.getElementById("phoneNo").value == "") {
         isValid = false;
         document.getElementById("phoneNovalidationError").classList.remove("hide");
@@ -117,7 +125,18 @@ function validate() {
             document.getElementById("phoneNovalidationError").classList.add("hide");
         }
     }
-    // Std class validation
+     // email
+     if (document.getElementById("email").value == "") {
+        isValid = false;
+        document.getElementById("emailvalidationError").classList.remove("hide");
+    } else {
+        isValid = true;
+        if (!document.getElementById("emailvalidationError").classList.contains("hide"))
+        {
+            document.getElementById("emailvalidationError").classList.add("hide");
+        }
+    }
+    // Select Departments validation
     if (document.getElementById("selecDepart").value == "") {
         isValid = false;
         document.getElementById("selecDepartvalidationError").classList.remove("hide");
@@ -137,6 +156,17 @@ function validate() {
         if (!document.getElementById("timevalidationError").classList.contains("hide"))
         {
             document.getElementById("timevalidationError").classList.add("hide");
+        }
+    }
+     // Date validation
+     if (document.getElementById("date").value == "") {
+        isValid = false;
+        document.getElementById("datevalidationError").classList.remove("hide");
+    } else {
+        isValid = true;
+        if (!document.getElementById("datevalidationError").classList.contains("hide"))
+        {
+            document.getElementById("datevalidationError").classList.add("hide");
         }
     }
     // Age validation
