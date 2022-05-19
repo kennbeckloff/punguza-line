@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 function myFunction() {
     alert("Appointment Booked Successfully.  Click Okay To Confirm!");
   }
