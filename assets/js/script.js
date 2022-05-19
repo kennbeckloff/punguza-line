@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 function myFunction() {
     alert("Appointment Booked Successfully.  Click Okay To Confirm!");
   }
@@ -190,7 +189,6 @@ function validateForm() {
       return false;
     }
   }
-=======
 function myFunction() {
     alert("Appointment Booked Successfully.  Click Okay To Confirm!");
   }
@@ -375,4 +373,3 @@ function validate() {
     }
     return isValid;
 }
->>>>>>> 7efe202d7510d65436220b3b981e096e258d4d53
