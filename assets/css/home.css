@@ -1,0 +1,136 @@
+.sect1{
+    background-image: url("/assets/_\ \(1\).jpeg");
+    background-size: cover;
+    height: 100vh;
+}
+
+body>section>nav>div>button{
+    display: inline-block;
+    font-size:small;
+    margin-right: 35px;
+}
+
+button:hover{
+    background-color: mediumblue;
+    color: red;
+    border: 1px solid blue;
+}
+section>.one{
+    color: white;
+}
+
+section>div>.hedi{
+    text-decoration: underline;
+    text-align: center;
+    color: crimson;
+    font-size:x-large;
+}
+
+section>div>div> ul{
+    display: flex;
+    
+}
+
+section>div>div>ul>li{
+    margin: 30px;
+    font-size: large;
+    color: blue;
+
+}
+
+section>#hdd2{
+    text-decoration: overline;
+    text-align: center;
+    color:crimson;
+}
+
+section>.cont4{
+    display:flex;
+    flex-wrap: wrap;
+    margin-left: 60px;
+}
+
+section>div>#con4a{
+    margin-right: 20px;
+}
+
+section>div>#con4b{
+    margin-right: 20px;
+}
+
+section>div>#con4c{
+    margin-right: 20px;
+}
+
+section>div>#con4d{
+    margin-right: 20px;
+}
+
+section>div>#con4e{
+    margin-right: 40px;
+}
+
+section>div>#con4f{
+    margin-right: 40px;
+}
+
+section>div>#con4g{
+    margin-right: 50px;
+}
+section>.contain2{
+    margin-top: 20px;
+    border-top: 1px solid black;
+    text-align: center;
+}
+
+.sect4{
+    border:1px solid black;
+    background-color: blue;
+    
+}
+section>div>ol>li{
+    list-style: none;
+    font-size: large;
+}
+
+
+.Fra{
+    display: flex;
+    width: 100%;
+    height: 250px;
+    border: 1px solid black;
+    background-color: rgb(120, 120, 173)
+}
+.Have{
+    width: 33.3%;
+}
+.Have h4,p,img{
+    padding-top: 10px;
+}
+.Have img{
+    height: 40px;
+}
+#Pung{
+    display: flex;
+}
+#Pung p{
+    padding-top: 15px;
+}
+.Need{
+    width: 33.3%;
+}
+.Need a{
+    padding-top: 20px;
+}
+.We{
+    width: 33.3%;
+}
+
+
+
+
+
+
+
+
+
