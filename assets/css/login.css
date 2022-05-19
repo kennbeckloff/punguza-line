@@ -93,6 +93,16 @@ input[type=text]:focus, input[type=password]:focus {
    border: none;
    border-radius: 10px;
 }
+.class{
+   background-color: red;
+   color: white;
+   padding: 16px 20px;
+   cursor: pointer;
+   width: 50%;
+   opacity: 0.9;
+   border: none;
+   border-radius: 10px;
+}
 .Login:hover {
    opacity: 1;
    color: pink;
