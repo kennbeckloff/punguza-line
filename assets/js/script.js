@@ -182,6 +182,7 @@ function validate() {
         }
     }
     return isValid;
+<<<<<<< HEAD
 =======
 function myFunction() {
     alert("Appointment Booked Successfully.  Click Okay To Confirm!");
@@ -366,5 +367,12 @@ function validate() {
         }
     }
     return isValid;
->>>>>>> 7efe202d7510d65436220b3b981e096e258d4d53
 }
+}
+function validateForm() {
+    let x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+      alert("Name must be filled out");
+      return false;
+    }
+  }
