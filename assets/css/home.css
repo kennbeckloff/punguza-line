@@ -7,7 +7,6 @@
     margin-top: 200px;
 margin-left: 1000px;
 font-size: 30px;
-font-weight: ;
 }
 body>section>nav>div>button{
     display: inline-block;
@@ -363,9 +362,16 @@ section>div>ol>li{
         margin-bottom: 5px;
     }
     
+    @media only screen and (max-width: 720px) {
+        nav{
+            display: block;
+        }
+      }
     /* If you don't want the footer to be responsive, remove these media queries */
     
-    @media (max-width: 880px) {
+
+
+    /* @media (max-width: 880px) {
     
         .footer-distributed{
             font: bold 14px sans-serif;
@@ -385,8 +391,30 @@ section>div>ol>li{
         }
     
     }
+
+    @media (max-width: 480px) {
+    
+        .sect1{
+            font: bold 14px sans-serif;
+        }
+    
+        .sect1-distributed .sect1-left,
+        .sect1-distributed .sect1-center,
+        .sect1-distributed .sect1-right{
+            display: block;
+            width: 100%;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+    
+        .sect1-distributed .sect1-center i{
+            margin-left: 0;
+        }
+    
+    }
+    
     
 
 
 
-
+ */
